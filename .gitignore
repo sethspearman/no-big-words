@@ -12,6 +12,10 @@ Thumbs.db
 *.log
 logs/
 
+# Python
+__pycache__/
+*.py[cod]
+
 # Environment
 .env
 .env.*

@@ -1,4 +1,7 @@
 using System.Net;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NoBigWords.Core.Models;
@@ -7,6 +10,12 @@ namespace NoBigWords.Tests;
 
 public sealed class RewriteApiTests : IClassFixture<WebApplicationFactory<Program>>
 {
+    private static readonly JsonSerializerOptions SerializerOptions = new()
+    {
+        PropertyNameCaseInsensitive = true,
+        Converters = { new JsonStringEnumConverter() },
+    };
+
     private readonly HttpClient _client;
 
     public RewriteApiTests(WebApplicationFactory<Program> factory)
@@ -23,13 +32,32 @@ public sealed class RewriteApiTests : IClassFixture<WebApplicationFactory<Progra
 
         response.EnsureSuccessStatusCode();
 
-        var payload = await response.Content.ReadFromJsonAsync<RewriteResponse>();
+        var payload = await response.Content.ReadFromJsonAsync<RewriteResponse>(SerializerOptions);
 
         Assert.NotNull(payload);
         Assert.Contains("space person", payload!.RewrittenText);
         Assert.Contains("far-seeing thing", payload.RewrittenText);
         Assert.Contains("world", payload.RewrittenText);
         Assert.NotEmpty(payload.Replacements);
+    }
+
+    [Fact]
+    public async Task RewriteEndpoint_AcceptsBrowserStyleStringEnumPayload()
+    {
+        using var content = new StringContent(
+            """
+            {"text":"The astronaut used a telescope to observe the planet.","mode":"NoBigWords"}
+            """,
+            Encoding.UTF8,
+            "application/json");
+
+        var response = await _client.PostAsync("/api/rewrite", content);
+
+        response.EnsureSuccessStatusCode();
+
+        var payload = await response.Content.ReadFromJsonAsync<RewriteResponse>(SerializerOptions);
+        Assert.NotNull(payload);
+        Assert.Contains("space person", payload!.RewrittenText);
     }
 
     [Fact]

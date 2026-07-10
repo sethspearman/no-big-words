@@ -60,6 +60,8 @@ CONTRACTIONS = {
     "wasn't": "was not",
     "wouldn't": "would not",
     "couldn't": "could not",
+    "shouldn't": "should not",
+    "hasn't": "has not",
     "i'll": "i will",
     "i'm": "i am",
     "i'd": "i would",
@@ -75,12 +77,106 @@ MONTHS = {
     "july", "august", "september", "october", "november", "december",
 }
 
+WEEKDAYS = {
+    "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday",
+}
+
 PEOPLE_NAMES = {
     "john", "james", "david", "michael", "lord", "mom", "mr", "dr", "st",
 }
 
+MORE_PEOPLE_NAMES = {
+    "george", "paul", "jesus", "peter", "william", "thomas", "jack", "louis",
+    "chris", "mike", "tom", "smith", "robert", "obama", "trump", "joe", "mary",
+    "richard", "charles", "henry", "martin", "harry", "scott", "frank", "jones", "lee",
+}
+
 PLACE_NAMES = {
     "york", "london", "washington", "england", "uk", "china",
+}
+
+MORE_PLACE_NAMES = {
+    "europe", "india", "california", "canada", "australia", "france", "russia",
+    "africa", "germany", "japan", "texas", "chicago", "paris", "israel", "mexico",
+    "florida", "britain", "usa", "san", "los", "angeles",
+}
+
+NATIONALITY_WORDS = {
+    "american", "british", "chinese", "russian", "german", "australian", "indian",
+    "french", "european", "african", "japanese", "christian",
+}
+
+GROUP_WORDS = {
+    "committee", "conference", "association", "network", "union", "league", "council",
+    "staff", "department", "community", "club", "army", "team", "band", "congress",
+    "senate", "agency", "institute", "organization", "administration",
+}
+
+TIME_WORDS = {
+    "century", "period", "season", "version", "moment", "history", "future", "past",
+    "weekend", "christmas", "today", "tomorrow",
+}
+
+WRITING_WORDS = {
+    "text", "article", "report", "statement", "content", "code", "record", "account",
+    "message", "story", "title", "comment", "comments", "claim", "claims", "speech",
+    "theory", "analysis", "details", "subject", "address", "profile",
+}
+
+MEDIA_WORDS = {
+    "album", "episode", "film", "series", "video", "television", "radio", "channel",
+    "interview",
+}
+
+MONEY_WORDS = {
+    "percent", "sales", "sale", "income", "credit", "capital", "price", "cost", "tax",
+    "bill", "deal", "market", "cash", "stock", "budget", "fund", "investment", "cent",
+    "economy", "insurance", "contract",
+}
+
+BODY_WORDS = {
+    "treatment", "medical", "health", "stomach", "care", "cancer", "disease", "drug",
+    "patients", "female", "male", "fat",
+}
+
+STATE_WORDS = {
+    "risk", "culture", "peace", "nature", "justice", "ability", "quality", "security",
+    "difference", "pressure", "population", "success", "access", "growth", "safety",
+    "knowledge", "opportunity", "reality", "luck", "doubt", "freedom", "status",
+    "faith", "strength", "purpose",
+}
+
+EVENT_WORDS = {
+    "campaign", "response", "construction", "movement", "charge", "test", "tour", "practice",
+    "vote", "election", "battle", "competition", "exchange", "trial",
+}
+
+PLACE_PART_WORDS = {
+    "district", "region", "county", "section", "site", "area", "corner", "centre",
+    "coast", "square", "airport", "library", "station",
+}
+
+ADJECTIVE_KIND_WORDS = {
+    "professional", "specific", "particular", "significant", "recent", "western",
+    "limited", "positive", "potential", "capital", "fair",
+}
+
+ROLE_WORDS = {
+    "manager", "author", "judge", "coach", "secretary", "professor", "captain",
+    "chairman", "winner", "partner", "artist", "queen", "minister", "director",
+    "executive", "master", "senior", "fan", "users", "soldier", "student", "teacher",
+}
+
+MEASURE_WORDS = {
+    "miles", "degree", "degrees", "speed", "mass", "scale", "score",
+}
+
+TECH_WORDS = {
+    "app", "application", "facebook", "google", "twitter", "http", "website", "internet",
+}
+
+INTERJECTION_WORDS = {
+    "lol", "wow",
 }
 
 MANUAL = {
@@ -281,6 +377,13 @@ MANUAL = {
     "version": "kind",
     "army": "war group",
     "australia": "place name",
+    "europe": "place name",
+    "india": "place name",
+    "california": "place name",
+    "canada": "place name",
+    "george": "person name",
+    "paul": "person name",
+    "jesus": "person name",
     "goal": "end point",
     "internet": "computer world",
     "practice": "do again and again",
@@ -288,6 +391,59 @@ MANUAL = {
     "success": "doing well",
     "access": "way in",
     "base": "bottom part",
+    "oil": "black stuff",
+    "gas": "air stuff",
+    "risk": "bad chance",
+    "district": "part of a place",
+    "minister": "top power person",
+    "percent": "out of hundred",
+    "products": "things made",
+    "recent": "new",
+    "wanna": "want to",
+    "culture": "way of life",
+    "etc": "and more",
+    "fans": "people who like it",
+    "growth": "getting bigger",
+    "respect": "look up to",
+    "response": "answer back",
+    "shall": "will",
+    "specific": "one set",
+    "standard": "usual way",
+    "album": "song set",
+    "century": "hundred years",
+    "effect": "thing it does",
+    "network": "tied group",
+    "peace": "no war",
+    "sales": "things sold",
+    "via": "by way of",
+    "addition": "added part",
+    "association": "group",
+    "committee": "group",
+    "conference": "big meeting",
+    "difference": "not the same part",
+    "double": "two of the same thing",
+    "island": "land in water",
+    "population": "all people",
+    "pressure": "push",
+    "text": "words",
+    "treatment": "body care",
+    "western": "from the west",
+    "campaign": "push plan",
+    "content": "what is in it",
+    "focus": "main point",
+    "particular": "this one",
+    "region": "part of land",
+    "link": "tied line",
+    "nature": "way of the world",
+    "construction": "building",
+    "episode": "show part",
+    "income": "money you get",
+    "justice": "right law",
+    "movement": "move",
+    "statement": "words you say",
+    "ability": "can do it",
+    "professional": "for work",
+    "significant": "big",
     "quickly": "fast",
     "quietly": "with no sound",
     "radio": "sound box",
@@ -383,6 +539,328 @@ MANUAL = {
     "worry": "fear in your mind",
     "write": "put down words",
     "wrong": "not right",
+    "la": "place name",
+    "anti": "against",
+    "chinese": "from that land",
+    "russian": "from that land",
+    "female": "woman",
+    "individual": "one person",
+    "miles": "far way",
+    "speed": "how fast",
+    "contact": "touch",
+    "throughout": "all through",
+    "welcome": "good to have you here",
+    "favorite": "best liked",
+    "manager": "work lead person",
+    "coach": "team lead person",
+    "friday": "day name",
+    "knowledge": "what you know",
+    "subject": "main thing",
+    "wow": "oh",
+    "author": "book writer",
+    "centre": "middle",
+    "claim": "say",
+    "german": "from that land",
+    "gotta": "have to",
+    "judge": "law person",
+    "product": "thing made",
+    "regular": "usual",
+    "secretary": "work help person",
+    "unit": "one part",
+    "annual": "every year",
+    "battle": "war fight",
+    "contract": "paper words",
+    "degree": "step",
+    "features": "parts",
+    "opinion": "what you think",
+    "rule": "way",
+    "sports": "games",
+    "australian": "from that land",
+    "cancer": "bad body thing",
+    "defense": "keeping safe",
+    "independent": "on its own",
+    "stock": "things to sell",
+    "weekend": "end of the week",
+    "africa": "place name",
+    "awesome": "very good",
+    "band": "music group",
+    "cash": "money",
+    "fan": "person who likes it",
+    "impact": "hit",
+    "lack": "not enough",
+    "latest": "most new",
+    "multiple": "more than one",
+    "protect": "keep safe",
+    "secret": "not known",
+    "sunday": "day name",
+    "activities": "things you do",
+    "address": "place words",
+    "analysis": "close look",
+    "christmas": "day name",
+    "details": "small parts",
+    "direct": "lead",
+    "grand": "big",
+    "here's": "here is",
+    "indian": "from that land",
+    "luck": "good chance",
+    "patients": "sick people",
+    "resources": "things to use",
+    "thus": "so",
+    "yesterday": "the day before today",
+    "congress": "law group",
+    "damage": "hurt",
+    "disease": "bad body state",
+    "facebook": "computer place",
+    "germany": "place name",
+    "glad": "happy",
+    "overall": "all in all",
+    "professor": "school lead person",
+    "captain": "top team person",
+    "crime": "bad law act",
+    "japan": "place name",
+    "male": "man",
+    "mrs": "woman",
+    "plant": "green thing",
+    "smith": "person name",
+    "texas": "place name",
+    "we'll": "we will",
+    "advice": "help words",
+    "award": "good thing",
+    "challenge": "hard thing",
+    "comment": "small note",
+    "equipment": "work things",
+    "holy": "full of god",
+    "nation": "big land",
+    "otherwise": "if not",
+    "purpose": "why",
+    "theory": "idea",
+    "agency": "work group",
+    "cell": "small room",
+    "coast": "land by the sea",
+    "drug": "body care thing",
+    "economy": "money way",
+    "mass": "a lot together",
+    "mission": "big plan",
+    "politics": "power game",
+    "saturday": "day name",
+    "app": "computer thing",
+    "complex": "not simple",
+    "freedom": "free state",
+    "google": "computer place",
+    "library": "book place",
+    "location": "place",
+    "queen": "top woman",
+    "attempt": "try",
+    "channel": "water way",
+    "exchange": "give and get",
+    "mobile": "easy to move",
+    "northern": "from the north",
+    "prior": "before",
+    "species": "kind",
+    "speech": "talk",
+    "traffic": "road things",
+    "airport": "air road stop",
+    "benefits": "good things",
+    "demand": "strong ask",
+    "solution": "answer",
+    "southern": "from the south",
+    "structure": "set up",
+    "brand": "company name",
+    "chicago": "place name",
+    "lake": "big water",
+    "scale": "size",
+    "score": "game number",
+    "smart": "bright",
+    "african": "from that land",
+    "benefit": "good thing",
+    "budget": "money plan",
+    "click": "press",
+    "estate": "land",
+    "faith": "deep trust",
+    "fashion": "way",
+    "feature": "part",
+    "fund": "money store",
+    "profile": "short write up",
+    "target": "point to hit",
+    "agent": "work person",
+    "employees": "work people",
+    "waste": "throw away",
+    "weird": "strange",
+    "adult": "grown person",
+    "chairman": "lead person",
+    "grade": "school number",
+    "healthy": "well",
+    "institute": "study group",
+    "method": "way",
+    "monday": "day name",
+    "senate": "law group",
+    "strength": "power",
+    "users": "use people",
+    "ii": "two",
+    "limited": "not much",
+    "required": "must",
+    "potential": "may be",
+    "previous": "before",
+    "conditions": "states",
+    "safety": "safe state",
+    "announced": "said",
+    "collection": "group",
+    "global": "whole world",
+    "material": "stuff",
+    "opportunity": "good chance",
+    "plus": "and",
+    "pre": "before",
+    "physical": "body",
+    "pro": "for",
+    "successful": "doing well",
+    "active": "doing things",
+    "civil": "about people",
+    "compared": "put by",
+    "literally": "for real",
+    "necessary": "must have",
+    "gay": "happy",
+    "ain't": "is not",
+    "eventually": "in the end",
+    "primary": "first",
+    "responsible": "must do it",
+    "environment": "world around us",
+    "nine": "number",
+    "therefore": "so",
+    "evening": "night",
+    "murder": "kill",
+    "powerful": "full of power",
+    "religious": "about god",
+    "royal": "of the top house",
+    "wonderful": "very good",
+    "famous": "known by many",
+    "traditional": "old way",
+    "critical": "very important",
+    "digital": "computer",
+    "fourth": "number",
+    "mental": "mind",
+    "separate": "not with",
+    "shouldn't": "should not",
+    "basis": "bottom part",
+    "dude": "man",
+    "ex": "old one",
+    "gain": "get",
+    "prime": "best",
+    "bet": "say on a game",
+    "camp": "group place",
+    "cast": "show group",
+    "correct": "right",
+    "firm": "strong",
+    "handle": "hold",
+    "improve": "make better",
+    "prevent": "stop",
+    "customers": "people who buy",
+    "dollars": "money",
+    "eastern": "from the east",
+    "fifth": "number",
+    "items": "things",
+    "produce": "make",
+    "progress": "getting better",
+    "proud": "happy",
+    "require": "need",
+    "background": "back part",
+    "birth": "being born",
+    "concept": "idea",
+    "copy": "make one more",
+    "host": "have over",
+    "patient": "sick person",
+    "rare": "not seen a lot",
+    "skills": "things you can do",
+    "thousands": "a lot",
+    "tough": "hard",
+    "ad": "sell words",
+    "apple": "tree food",
+    "birthday": "day you were born",
+    "boss": "top work person",
+    "request": "ask",
+    "vehicle": "move thing",
+    "volume": "how much sound",
+    "aid": "help",
+    "beauty": "how good it looks",
+    "billion": "a lot",
+    "develop": "make bigger",
+    "farm": "food land",
+    "file": "paper set",
+    "guide": "lead",
+    "treat": "be good to",
+    "unique": "one of a kind",
+    "variety": "many kinds",
+    "weapons": "war things",
+    "yours": "your one",
+    "youth": "young people",
+    "appreciate": "like",
+    "dont": "do not",
+    "evil": "very bad",
+    "injury": "hurt",
+    "iron": "hard metal",
+    "magazine": "book thing",
+    "religion": "god way",
+    "strategy": "plan",
+    "blog": "computer writing",
+    "core": "middle",
+    "excellent": "very good",
+    "honest": "true",
+    "medicine": "body care",
+    "nuclear": "power kind",
+    "port": "ship stop",
+    "reduce": "make less",
+    "solid": "hard all through",
+    "spanish": "from that land",
+    "sport": "game",
+    "stress": "mind push",
+    "taste": "mouth feel",
+    "victory": "win",
+    "assistant": "help person",
+    "citizens": "people of a place",
+    "emergency": "bad time",
+    "failure": "not doing well",
+    "festival": "big day",
+    "fuel": "power stuff",
+    "mail": "sent words",
+    "plane": "air thing",
+    "prince": "top son",
+    "proper": "right",
+    "fair": "right",
+    "positive": "good",
+    "tour": "trip",
+    "commercial": "about selling",
+    "operation": "work",
+    "commission": "group",
+    "competition": "game",
+    "agreement": "same thought",
+    "condition": "state",
+    "division": "part",
+    "protection": "keeping safe",
+    "vs": "against",
+    "supply": "things to give",
+    "option": "choice",
+    "dangerous": "not safe",
+    "advantage": "good part",
+    "apart": "far from",
+    "function": "work",
+    "impossible": "can not be",
+    "influence": "push",
+    "van": "move car",
+    "dear": "loved",
+    "length": "how long it is",
+    "fellow": "man",
+    "magic": "strange power",
+    "violence": "hurt acts",
+    "bay": "water part",
+    "exist": "be there",
+    "ill": "sick",
+    "plenty": "a lot",
+    "valley": "low land",
+    "zone": "part",
+    "accident": "bad chance",
+    "cheap": "not much money",
+    "climate": "sky state",
+    "duty": "must do",
+    "museum": "old thing place",
 }
 
 
@@ -433,7 +911,7 @@ def normalize_manual(allowed: set[str], seed_entries: dict[str, Entry]) -> dict[
         merged[word] = Entry(require_valid(clean, allowed), 0.9, "Auto-generated manual starter replacement")
 
     for month in MONTHS:
-        merged[month] = Entry(require_valid("month name", allowed), 0.45, "Auto-generated category fallback for month names")
+        merged[month] = Entry(require_valid("month name", allowed), 0.72, "Auto-generated category fallback for month names")
 
     for name in PEOPLE_NAMES:
         if name == "dr":
@@ -443,10 +921,13 @@ def normalize_manual(allowed: set[str], seed_entries: dict[str, Entry]) -> dict[
         elif name == "st":
             merged[name] = Entry(require_valid("road", allowed), 0.35, "Auto-generated abbreviation fallback; meaning may vary")
         else:
-            merged[name] = Entry(require_valid("person name", allowed), 0.45, "Auto-generated category fallback for names")
+            merged[name] = Entry(require_valid("person name", allowed), 0.72, "Auto-generated category fallback for names")
 
-    for place in PLACE_NAMES:
-        merged[place] = Entry(require_valid("place name", allowed), 0.45, "Auto-generated category fallback for place names")
+    for name in MORE_PEOPLE_NAMES:
+        merged[name] = Entry(require_valid("person name", allowed), 0.72, "Auto-generated category fallback for names")
+
+    for place in PLACE_NAMES | MORE_PLACE_NAMES:
+        merged[place] = Entry(require_valid("place name", allowed), 0.72, "Auto-generated category fallback for place names")
 
     return merged
 
@@ -509,20 +990,50 @@ def pluralize_phrase(base: str, allowed: set[str]) -> str:
     return base
 
 
+def is_too_generic(base: str) -> bool:
+    return base in {
+        "thing",
+        "things",
+        "like this",
+        "in this way",
+        "do",
+        "person",
+        "persons",
+        "place name",
+        "person name",
+        "month name",
+        "day name",
+        "of one kind",
+    } or base.startswith(("of ", "in a "))
+
+
 def transform_from_base(kind: str, base_entry: Entry, allowed: set[str]) -> Entry | None:
     base = base_entry.replacement
 
-    transforms = {
-        "plural": (pluralize_phrase(base, allowed), base_entry.confidence - 0.1, "Auto-generated plural fallback from simpler base form"),
-        "past": (base, base_entry.confidence - 0.15, "Auto-generated past-tense fallback from simpler base form"),
-        "ing": (base, base_entry.confidence - 0.15, "Auto-generated -ing fallback from simpler base form"),
-        "agent": (f"person who {base}", base_entry.confidence - 0.12, "Auto-generated person-form fallback from simpler base form"),
-        "superlative": (f"most {base}", base_entry.confidence - 0.16, "Auto-generated superlative fallback from simpler base form"),
-        "adverb": (f"in a {base} way", base_entry.confidence - 0.16, "Auto-generated adverb fallback from simpler base form"),
-        "state": (f"{base} state", base_entry.confidence - 0.18, "Auto-generated state-form fallback from simpler base form"),
-        "event": (f"{base} thing", base_entry.confidence - 0.18, "Auto-generated event-form fallback from simpler base form"),
-        "about": (f"about {base}", base_entry.confidence - 0.18, "Auto-generated adjective fallback from simpler base form"),
-    }
+    if is_too_generic(base):
+        transforms = {
+            "plural": ("many things", 0.34, "Auto-generated plural fallback from simpler base form"),
+            "past": ("did it", 0.32, "Auto-generated past-tense fallback from simpler base form"),
+            "ing": ("doing it", 0.32, "Auto-generated -ing fallback from simpler base form"),
+            "agent": ("person", 0.42, "Auto-generated person-form fallback from simpler base form"),
+            "superlative": ("most", 0.28, "Auto-generated superlative fallback from simpler base form"),
+            "adverb": ("in some way", 0.36, "Auto-generated adverb fallback from simpler base form"),
+            "state": ("state", 0.34, "Auto-generated state-form fallback from simpler base form"),
+            "event": ("act", 0.36, "Auto-generated event-form fallback from simpler base form"),
+            "about": ("of one kind", 0.34, "Auto-generated adjective fallback from simpler base form"),
+        }
+    else:
+        transforms = {
+            "plural": (pluralize_phrase(base, allowed), base_entry.confidence - 0.1, "Auto-generated plural fallback from simpler base form"),
+            "past": (base, base_entry.confidence - 0.15, "Auto-generated past-tense fallback from simpler base form"),
+            "ing": (base, base_entry.confidence - 0.15, "Auto-generated -ing fallback from simpler base form"),
+            "agent": (f"person who {base}", base_entry.confidence - 0.12, "Auto-generated person-form fallback from simpler base form"),
+            "superlative": (f"most {base}", base_entry.confidence - 0.16, "Auto-generated superlative fallback from simpler base form"),
+            "adverb": (f"in a {base} way", base_entry.confidence - 0.16, "Auto-generated adverb fallback from simpler base form"),
+            "state": (f"{base} state", base_entry.confidence - 0.18, "Auto-generated state-form fallback from simpler base form"),
+            "event": (f"{base} act", base_entry.confidence - 0.18, "Auto-generated event-form fallback from simpler base form"),
+            "about": (f"about {base}", base_entry.confidence - 0.18, "Auto-generated adjective fallback from simpler base form"),
+        }
 
     replacement, confidence, notes = transforms[kind]
     if validate_phrase(replacement, allowed):
@@ -532,28 +1043,94 @@ def transform_from_base(kind: str, base_entry: Entry, allowed: set[str]) -> Entr
 
 def category_fallback(word: str, allowed: set[str]) -> Entry:
     if word in MONTHS:
-        return Entry("month name", 0.45, "Auto-generated month-name fallback")
+        return Entry("month name", 0.72, "Auto-generated month-name fallback")
 
-    if word in PEOPLE_NAMES or word.endswith("son"):
-        return Entry("person name", 0.4, "Auto-generated name fallback")
+    if word in WEEKDAYS:
+        return Entry("day name", 0.72, "Auto-generated week-day fallback")
 
-    if word in PLACE_NAMES:
-        return Entry("place name", 0.4, "Auto-generated place-name fallback")
+    if word in PEOPLE_NAMES or word in MORE_PEOPLE_NAMES or word.endswith("son"):
+        return Entry("person name", 0.72, "Auto-generated name fallback")
 
-    if word.endswith(("tion", "sion", "ment", "ness", "ity")):
-        return Entry("thing", 0.3, "Auto-generated abstract-noun fallback")
+    if word in NATIONALITY_WORDS:
+        return Entry("from that land", 0.66, "Auto-generated nationality fallback")
+
+    if word in PLACE_NAMES or word in MORE_PLACE_NAMES or word.endswith(("land", "stan")):
+        return Entry("place name", 0.72, "Auto-generated place-name fallback")
+
+    if word in ROLE_WORDS:
+        return Entry("person", 0.6, "Auto-generated role fallback")
+
+    if word in GROUP_WORDS:
+        return Entry("group", 0.64, "Auto-generated group fallback")
+
+    if word in TIME_WORDS:
+        return Entry("time", 0.64, "Auto-generated time fallback")
+
+    if word in WRITING_WORDS:
+        return Entry("writing", 0.64, "Auto-generated writing fallback")
+
+    if word in MEDIA_WORDS:
+        return Entry("show thing", 0.60, "Auto-generated media fallback")
+
+    if word in MONEY_WORDS:
+        return Entry("money thing", 0.60, "Auto-generated money fallback")
+
+    if word in BODY_WORDS:
+        return Entry("body thing", 0.60, "Auto-generated body fallback")
+
+    if word in MEASURE_WORDS:
+        return Entry("number", 0.58, "Auto-generated measure fallback")
+
+    if word in PLACE_PART_WORDS:
+        return Entry("place part", 0.62, "Auto-generated place-part fallback")
+
+    if word in STATE_WORDS:
+        return Entry("state", 0.56, "Auto-generated state fallback")
+
+    if word in EVENT_WORDS:
+        return Entry("act", 0.56, "Auto-generated event fallback")
+
+    if word in ADJECTIVE_KIND_WORDS:
+        return Entry("of one kind", 0.50, "Auto-generated adjective-kind fallback")
+
+    if word in TECH_WORDS:
+        return Entry("computer thing", 0.62, "Auto-generated tech fallback")
+
+    if word in INTERJECTION_WORDS:
+        return Entry("oh", 0.56, "Auto-generated interjection fallback")
+
+    if word.endswith(("tion", "sion", "ment", "ance", "ence")):
+        return Entry("act", 0.48, "Auto-generated abstract-noun fallback")
+
+    if word.endswith(("ness", "ity", "ship", "dom")):
+        return Entry("state", 0.48, "Auto-generated abstract-noun fallback")
 
     if word.endswith(("ing", "ed")):
-        return Entry("do", 0.26, "Auto-generated verb-form fallback")
+        return Entry("do", 0.36, "Auto-generated verb-form fallback")
 
-    if word.endswith(("er", "or", "ist")):
-        return Entry("person", 0.28, "Auto-generated person-role fallback")
+    if word.endswith(("er", "or", "ist", "ian")):
+        return Entry("person", 0.54, "Auto-generated person-role fallback")
 
     if word.endswith(("ly",)):
-        return Entry("in this way", 0.25, "Auto-generated adverb fallback")
+        return Entry("in some way", 0.46, "Auto-generated adverb fallback")
 
-    if word.endswith(("al", "ic", "ive", "ous", "ful", "less", "able", "ible")):
-        return Entry("like this", 0.25, "Auto-generated adjective fallback")
+    if word.endswith(("al", "ic", "ive", "ous", "ful", "less", "able", "ible", "ary")):
+        return Entry("of one kind", 0.44, "Auto-generated adjective fallback")
+
+    if word.endswith(("ism",)):
+        return Entry("way", 0.50, "Auto-generated way fallback")
+
+    if word.endswith(("ware", "net")) or word.startswith(("cyber", "web")):
+        return Entry("computer thing", 0.62, "Auto-generated tech fallback")
+
+    if word.endswith(("graph", "gram", "script")):
+        return Entry("writing", 0.60, "Auto-generated writing fallback")
+
+    if word.endswith(("meter", "scope")):
+        return Entry("machine thing", 0.60, "Auto-generated machine fallback")
+
+    if word.endswith(("hood",)):
+        return Entry("group", 0.50, "Auto-generated group fallback")
 
     return Entry("thing", 0.22, "Auto-generated generic fallback")
 
