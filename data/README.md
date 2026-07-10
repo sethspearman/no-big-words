@@ -41,3 +41,44 @@ Examples of collapsed variants:
 - `i'll` and `i’ll` -> `i'll`
 
 This is probably a better starting point for the app's internal lookup set than the raw extracted file.
+
+## Replacement Files
+
+### `replacements.json`
+
+This is the small curated seed dictionary.
+
+Use it for:
+
+- hand-written replacements we trust
+- preserving intentionally funny or high-quality replacements
+- feeding the larger generator pipeline
+
+### `replacements.generated.json`
+
+This is the large generated dictionary used by the app scaffold.
+
+It is built from:
+
+- `replacements.json` seed entries
+- the 15,000-word non-allowed list
+- contraction expansion
+- manual starter mappings for high-signal words
+- morphology-based fallbacks
+- generic category fallbacks
+
+### `replacements.review-needed.psv`
+
+This is a ranked review backlog for weaker generated entries.
+
+### `replacements.generation-report.json`
+
+This is a small machine-readable summary of the latest generation pass.
+
+### `top-15000-common-words-excluding-allowed.*`
+
+These files are the source candidate list used for building the large generated replacement dictionary.
+
+### `scripts/generate_replacements.py`
+
+This script regenerates the full replacement dictionary and review files.

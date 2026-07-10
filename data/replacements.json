@@ -1,0 +1,52 @@
+{
+  "planet": {
+    "replacement": "world",
+    "confidence": 0.95,
+    "notes": "Good general replacement"
+  },
+  "astronaut": {
+    "replacement": "space person",
+    "confidence": 0.9,
+    "notes": "Fun strict-mode replacement"
+  },
+  "telescope": {
+    "replacement": "far-seeing thing",
+    "confidence": 0.9,
+    "notes": "Matches the playful strict-mode tone"
+  },
+  "microscope": {
+    "replacement": "small-seeing thing",
+    "confidence": 0.88,
+    "notes": "Simple descriptive replacement"
+  },
+  "oxygen": {
+    "replacement": "air part we need",
+    "confidence": 0.92,
+    "notes": "Useful science starter example"
+  },
+  "photograph": {
+    "replacement": "picture",
+    "confidence": 0.97,
+    "notes": "Direct common replacement"
+  },
+  "automobile": {
+    "replacement": "road car",
+    "confidence": 0.91,
+    "notes": "Deliberately playful strict-mode choice"
+  },
+  "observe": {
+    "replacement": "look at",
+    "confidence": 0.9,
+    "notes": "Short common phrase"
+  },
+  "conversation": {
+    "replacement": "talk",
+    "confidence": 0.95,
+    "notes": "Common plain-language simplification"
+  },
+  "information": {
+    "replacement": "facts",
+    "confidence": 0.86,
+    "notes": "Not always perfect, but useful as a starter"
+  }
+}

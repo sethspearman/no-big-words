@@ -1,0 +1,9 @@
+{
+  "generated_entries": 15000,
+  "review_needed_entries": 14523,
+  "source_counts": {
+    "seed_or_manual": 225,
+    "morphology": 3486,
+    "fallback": 11289
+  }
+}
